@@ -7,7 +7,7 @@ def data_get():
 
 
 #city_name="jodhpur"
-   data=requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=fe79492527aa13826158cc53dcb324b0").json()
+   data=requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"").json()
 #print(data)
    w_lable1.config(text=data["weather"][0]["main"])
    wb_lable1.config(text=data["weather"][0]["description"])
